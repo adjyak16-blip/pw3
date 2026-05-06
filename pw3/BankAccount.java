@@ -1,17 +1,15 @@
 package pw3;
 
 public class BankAccount {
-    // Private attributes (Encapsulation)
+  
     private String ownerName;
     private double balance;
 
-    // Constructor
     public BankAccount(String ownerName, double balance) {
         this.ownerName = ownerName;
         this.balance = balance;
     }
 
-    // Method to add money
     public void deposit(double amount) {
         if (amount > 0) {
             this.balance += amount;
@@ -19,7 +17,6 @@ public class BankAccount {
         }
     }
 
-    // Method to withdraw money with condition
     public void withdraw(double amount) {
         if (amount > 0 && amount <= this.balance) {
             this.balance -= amount;
@@ -29,7 +26,6 @@ public class BankAccount {
         }
     }
 
-    // Getters[cite: 7]
     public double getBalance() {
         return balance;
     }
@@ -38,7 +34,6 @@ public class BankAccount {
         return ownerName;
     }
 
-    // Setters[cite: 7]
     public void setOwnerName(String name) {
         this.ownerName = name;
     }
@@ -47,7 +42,6 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    // toString method[cite: 7]
     @Override
     public String toString() {
         return "Account Owner: " + ownerName + " | Balance: " + balance + " DA";
