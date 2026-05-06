@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class TestShape {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // Polymorphism: One list to hold different types of shapes[cite: 4]
         ArrayList<Shape> shapes = new ArrayList<>();
 
         System.out.println("How many shapes do you want to create?");
@@ -34,7 +33,6 @@ public class TestShape {
         System.out.println("\n--- Shapes Calculations ---");
         for (Shape s : shapes) {
             System.out.println(s.toString());
-            // System calls the correct area() based on the object type[cite: 4]
             System.out.printf("Area: %.2f | Perimeter: %.2f\n", s.area(), s.perimeter());
             System.out.println("---------------------------");
         }
