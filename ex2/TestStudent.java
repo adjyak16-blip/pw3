@@ -10,7 +10,7 @@ public class TestStudent {
 
         System.out.print("How many students do you want to enter? ");
         int count = sc.nextInt();
-        sc.nextLine(); // Clear buffer
+        sc.nextLine(); 
 
         for (int i = 0; i < count; i++) {
             System.out.println("\nEntering data for student " + (i + 1) + ":");
@@ -22,16 +22,15 @@ public class TestStudent {
             
             System.out.print("Grade: ");
             double grade = sc.nextDouble();
-            sc.nextLine(); // Clear buffer
+            sc.nextLine(); 
 
-            // Create and add to ArrayList[cite: 8]
             studentList.add(new Student(name, age, grade));
         }
 
         System.out.println("\n--- Students List Results ---");
         for (Student s : studentList) {
             System.out.println(s.toString());
-            // Check and display whether the student has passed[cite: 8]
+      
             if (s.isPassed()) {
                 System.out.println("Status: Passed");
             } else {
