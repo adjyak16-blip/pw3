@@ -11,12 +11,12 @@ public class Rectangle extends Shape {
 
     @Override
     public double area() {
-        return length * width; // Area of rectangle
+        return length * width; 
     }
 
     @Override
     public double perimeter() {
-        return 2 * (length + width); // Perimeter of rectangle
+        return 2 * (length + width); 
     }
 
     @Override
