@@ -10,7 +10,7 @@ public class TestEmployee {
 
         System.out.print("Enter number of managers to add: ");
         int n = sc.nextInt();
-        sc.nextLine(); // Clear the buffer
+        sc.nextLine(); 
 
         for (int i = 0; i < n; i++) {
             System.out.println("\nManager " + (i + 1) + " details:");
@@ -22,9 +22,9 @@ public class TestEmployee {
 
             System.out.print("Bonus: ");
             double bonus = sc.nextDouble();
-            sc.nextLine(); // Clear the buffer
+            sc.nextLine();
 
-            // Create Manager instance and add to list
+      
             managers.add(new Manager(name, salary, bonus));
         }
 
